@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.contact-section {
+    padding: 80px 25px;
+    background: rgba(255, 251, 240, 0.91);
+}
+
+
+.wrapper {
+    /* max-width: 850px; */
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    gap: 20px;
+    /* margin: 50px auto; */
+    overflow: hidden;
+}
+
+
+
+.wrapper .form-right {
+    padding: 40px 20px;
+    position: relative;
+    width: 130%;
+    border-radius: 14.884px;
+    border: 0.93px solid #EEE;
+}
+
+.form-fill {
+    padding-bottom: 42px;
+}
+
+.form-message {
+    padding-bottom: 162px;
+}
+
+.contact-title {
+    margin-bottom: 60px;
+}
+
+.wrapper .form-right h2 {
+    color: var(--color-2);
+}
+
+.wrapper .form-right label {
+    font-weight: 500;
+    font-size: 15px;
+    color: #666;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.wrapper .form-right .input-field {
+    width: 100%;
+    /* padding: 10px 15px; */
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    outline: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.wrapper .form-right .input-field:focus {
+    border: 1px solid var(--color-2);
+}
+
+
+.wrapper .option {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    font-weight: 900;
+    cursor: pointer;
+    user-select: none
+}
+
+.wrapper .option input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0
+}
+
+.wrapper .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 2px
+}
+
+.wrapper .option:hover input~.checkmark {
+    background-color: #f1f1f1
+}
+
+.wrapper .option input:checked~.checkmark {
+    border: 2px solid #e5e5e5;
+    background-color: #fff;
+    transition: 300ms ease-in-out all
+}
+
+.wrapper .checkmark:after {
+    content: "\2713";
+    position: absolute;
+    display: none;
+    color: var(--color-2);
+    font-size: 1rem;
+}
+
+.wrapper .option input:checked~.checkmark:after {
+    display: block
+}
+
+.wrapper .option .checkmark:after {
+    left: 2px;
+    top: -4px;
+    width: 5px;
+    height: 10px
+}
+
+.wrapper .register {
+    padding: 24px;
+    display: flex;
+    width: 183px;
+    padding: 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    border-radius: 10px;
+    background: var(--color);
+    cursor: pointer;
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+    border: none;
+}
+
+.wrapper .register:hover {
+    background: transparent;
+    color: #000;
+    border: .5px solid var(--color);
+}
+
+.wrapper a {
+    text-decoration: none;
+}
+@media (max-width: 915px) {
+    .form-fill div label{
+         text-align:start;
+    }
+    .form-message label{
+        text-align:start;
+   }
+     .wrapper {
+         margin: 50px 5px;
+     }
+ 
+     .wrapper .form-right {
+         width: 100%;
+     }
+ }
+@media (max-width: 860.5px) {
+   .form-fill div label{
+        text-align:start;
+   }
+   .form-message label{
+    text-align:start;
+}
+    .wrapper {
+        margin: 50px 5px;
+    }
+
+    .wrapper .form-right {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 767.5px) {
+   .form-fill div label{
+        text-align:start;
+   }
+   .form-message label{
+        text-align:start;
+   }
+    .wrapper {
+        flex-direction: column;
+        margin: 30px 20px;
+    }
+
+    .wrapper .form-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+   .form-fill div label{
+        text-align:start;
+   }
+   .form-message label{
+    text-align:start;
+   }
+    .wrapper {
+        margin: 30px 15px;
+    }
+
+    .wrapper .form-right {
+        padding: 25px;
+    }
+
+    .wrapper .form-right {
+        width: 100%;
+    }
+
+    .wrapper .register {
+        position: unset;
+        bottom: 0;
+        right: 50px;
+        margin: 0 auto;
+    }
+}
