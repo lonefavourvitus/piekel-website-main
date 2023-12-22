@@ -207,13 +207,15 @@ header .carousel-control-prev {
     padding: 50px 0
 }
 
+
+
 .about .img {
     width: 85%;
 }
 
 .about .img img {
     width: 100%;
-    height: auto;
+    height: 400px;
 }
 
 .about .row>.col-lg-6:first-of-type {
